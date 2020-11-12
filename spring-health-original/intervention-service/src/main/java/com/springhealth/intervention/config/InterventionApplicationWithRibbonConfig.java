@@ -1,5 +1,4 @@
 package com.springhealth.intervention.config;
-//package com.tianyalan.orders.config;
 //
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.SpringApplication;
