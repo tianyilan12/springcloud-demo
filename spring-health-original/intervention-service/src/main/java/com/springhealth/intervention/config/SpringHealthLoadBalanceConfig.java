@@ -1,5 +1,4 @@
 package com.springhealth.intervention.config;
-//package com.tianyalan.orders.config;
 //
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -13,12 +12,9 @@ package com.springhealth.intervention.config;
 //@Configuration
 //public class SpringHealthLoadBalanceConfig {
 //
-//    @Autowired
-//    IClientConfig config;
 //
 //    @Bean
-//    @ConditionalOnMissingBean
-//    public IRule ribbonRule(IClientConfig config) {
+//    public IRule ribbonRule() {
 //    	
 //        return new RandomRule();
 //    }
