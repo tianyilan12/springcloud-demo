@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.springhealth</groupId>
+  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>ordersystem-parent-pom</artifactId>
+  <packaging>pom</packaging>
+
+  <name>springhealth-parent-pom</name>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.2.4.RELEASE</version>
+  </parent>
+  
+  <modules>
+    <module>config-server</module>
+    <module>eureka-server</module>
+    <module>intervention-service</module>
+    <module>device-service</module>
+    <module>user-service</module>
+    <module>zuul-server</module>		
+  </modules>
+
+</project>

@@ -1,0 +1,30 @@
+
+server:
+   port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+     config:
+       server:
+           native:
+              searchLocations: classpath:springhealthconfig/,classpath:springhealthconfig/userservice,classpath:springhealthconfig/deviceservice,classpath:springhealthconfig/interventionservice
+#              searchLocations: classpath:/springhealthconfig,classpath:/config/userservice,classpath:/config/deviceservice,classpath:/config/interventionservice
+           encrypt:
+              enable: false
+            
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: admin
+#    password: admin
+
+encrypt: 
+    key: configsymmetrickey
+    
+logging:
+    level:
+      com.netflix: WARN
+      org.springframework.web: WARN
+      com.tianyalan: INFO
