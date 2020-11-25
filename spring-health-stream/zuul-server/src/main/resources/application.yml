@@ -1,6 +1,12 @@
 server:
   port: 5555
-    
+
+management:                       
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
 logging:
     level:
       com.netflix: WARN
