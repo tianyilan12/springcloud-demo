@@ -1,0 +1,48 @@
+server:
+  port: 5555
+
+management:                       
+  endpoints:
+    web:
+      exposure:
+        include: "*"        
+
+spring:
+  zipkin:
+    baseUrl:  http://localhost:9411
+    
+logging:
+    level:
+      com.netflix: WARN
+      org.springframework.web: WARN
+      com.tianyalan: INFO
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  prefix:  /springhealth
+  routes:
+    userservice: /user/**
+    deviceservice: /device/**
+    interventionservice: /intervention/**
+  sensitiveHeaders: Cookie,Set-Cookie  
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+        
+        
+#hystrix:
+# command:
+#   default:
+#     execution:
+#       isolation:
+#         thread:
+#           timeoutInMilliseconds: 3000
+        

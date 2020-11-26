@@ -1,0 +1,14 @@
+customProperty: customProperty
+
+redis.server: 127.0.0.1
+redis.port: 6379
+
+spring:
+  jpa:
+    database: MYSQL
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://119.3.52.175:3306/springhealth_intervention
+    username: root
+    password: 1qazxsw2#edc
+    driver-class-name: com.mysql.jdbc.Driver
