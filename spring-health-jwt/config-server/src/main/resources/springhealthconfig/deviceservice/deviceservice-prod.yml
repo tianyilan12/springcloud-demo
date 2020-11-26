@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    database: MYSQL
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://119.3.52.175:3306/springhealth_device
+    username: root
+    password: 1qazxsw2#edc
+    driver-class-name: com.mysql.jdbc.Driver
