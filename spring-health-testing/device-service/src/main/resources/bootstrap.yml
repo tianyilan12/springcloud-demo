@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: deviceservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true

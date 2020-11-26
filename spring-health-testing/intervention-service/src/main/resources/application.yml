@@ -1,0 +1,42 @@
+server:
+   port: 8083
+   
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        userInfoChangedChannel:
+#          destination: userInfoChangedTopic
+#          content-type: application/json          
+#          group: interventionGroup          
+#        binder:
+#          zkNodes: localhost
+#          brokers: localhost
+          
+spring:
+  cloud:
+    config:
+     enabled: true
+     uri: http://localhost:8888
+  zipkin:
+    baseUrl:  http://localhost:9411
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8080/userinfo
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+    level:
+      com.netflix: WARN
+      org.springframework.web: WARN
+      com.tianyalan: INFO
