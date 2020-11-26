@@ -3,5 +3,5 @@
 2. spring-health-stream：在spring-health-original基础上添加Spring Cloud Stream
 3. spring-health-oauth2：在spring-health-original基础上添加OAuth2服务访问控制
 4. spring-health-jwt：在spring-health-original基础上添加JWT
-5. spring-health-testing：包含微服务测试机制示例代码
+5. spring-health-testing：在spring-health-original基础上添加测试示例代码
 6. spring-health-cdc：包含基于Spring Cloud Contract的面向契约测试机制示例代码
